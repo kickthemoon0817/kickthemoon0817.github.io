@@ -5,62 +5,88 @@
     box-sizing: border-box;
 }
 
-/* 바디 스타일 */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
 }
 
-/* 헤더 스타일 */
-header {
-    background-color: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
+/* 중앙 이미지 스타일 */
+.central-image {
+    width: 200px; /* 이미지 크기 조절 */
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
 }
 
-header nav ul {
-    list-style: none;
+/* 메뉴 스타일 */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(53, 66, 74, 0.9);
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 0 10px 10px 0;
 }
 
-header nav ul li {
-    margin: 0 15px;
+.menu ul {
+    list-style: none;
+    text-align: left;
 }
 
-header nav ul li a {
+.menu ul li {
+    margin: 20px 0;
+}
+
+.menu ul li a {
     color: #ffffff;
     text-decoration: none;
+    font-size: 18px;
     font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+    border-bottom: 1px solid #ffffff33;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* 메인 콘텐츠 스타일 */
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 20px;
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-/* 푸터 스타일 */
-footer {
-    background-color: #35424a;
+.menu ul li a:hover {
+    background-color: #e8491d;
     color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+}
+
+/* 이미지 호버 시 효과 */
+.image-menu-container:hover .central-image {
+    transform: translateX(-220px); /* 이미지 이동 거리 조절 */
+}
+
+.image-menu-container:hover .menu {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: auto;
+        top: 100%;
+        left: 0;
+        transform: translateY(-100%);
+    }
+
+    .image-menu-container:hover .menu {
+        transform: translateY(0);
+    }
+
+    .central-image {
+        transform: none; /* 작은 화면에서는 이미지 이동을 비활성화 */
+    }
 }
