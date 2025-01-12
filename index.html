@@ -1,32 +1,18 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>인터랙티브 이미지와 메뉴</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container vh-100 d-flex justify-content-center align-items-center">
-        <div class="image-menu-container position-relative">
-            <!-- 중앙에 배치할 로고 이미지 삽입 -->
-            <img src="images/logo.jpg" alt="로고 이미지" class="central-image">
+---
+layout: default
+title: your awesome title
+page-title: your awesome page-title.
+home-title: your awesome home-title.
+description: description
+---
 
-            <nav class="menu">
-                <button class="close-btn" aria-label="메뉴 닫기">&times;</button>
-                <ul>
-                    <li><a href="#home">홈</a></li>
-                    <li><a href="#about">소개</a></li>
-                    <li><a href="#services">서비스</a></li>
-                    <li><a href="#contact">연락처</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-
-    <!-- Bootstrap JS (선택 사항) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script> <!-- JavaScript 파일 추가 -->
-</body>
-</html>
+{% include header.html %}
+{% include boot.html %}
+<main>
+    {% include title.html %}
+    <ul class="post-list">
+      {% include posts_paginator.html %}
+    </ul>
+</main>
+{% include pageNav.html %}
+{% include footer.html %}
