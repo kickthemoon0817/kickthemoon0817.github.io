@@ -1,0 +1,262 @@
+<!-- Blog Layout -->
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Include head tag -->
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-sclable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="달차기" />
+<meta name="keywords" content="AI, Unity" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_default.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<!-- SNS-icon -->
+<script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script>
+<!-- share.css -->
+<link rel="stylesheet" href="/assets/css/share.min.css">
+<!-- font -->
+<link rel="stylesheet" href="/assets/css/font.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet"> -->
+
+<!-- Favicon -->
+<link href="/assets/profile.jpeg" rel="shortcut icon" />
+<link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
+<!-- Android Lolipop Theme Color -->
+<!-- <meta name="theme-color" content="#1464FB"> -->
+<title>Hello Github.io!</title>
+<!-- 百度统计 -->
+
+<!-- 谷歌分析 -->
+
+
+  <!-- Android Lolipop Theme Color -->
+<meta name="theme-color" content=" rgb(130, 130, 255) ">
+</head>
+<body>
+
+  <!-- Top anchor -->
+  <a id="htmlup" name="htmlup"></a>
+  <!-- Include post top options -->
+  
+<header id="post-header" style="background-color:rgb(130, 130, 255);">
+  <div class="top-center">
+      <div class="logo">
+          <a href="/" title="my awesome webtitle" style="color: white;">Kick The Moon</a>
+      </div>
+      <nav class="top-nav">
+          <ul>
+              
+                <li><a href="/" style="color: white;">Home</a></li>
+              
+                <li><a href="/tags.html" style="color: white;">Tag</a></li>
+              
+                <li><a href="/timeline.html" style="color: white;">Timeline</a></li>
+              
+                <li><a href="/about.html" style="color: white;">aboutMe</a></li>
+              
+                <li><a href="/friendLink.html" style="color: white;">Links</a></li>
+              
+          </ul>
+      </nav>
+      <div id="top-boot">
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot_white.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot_white.png" alt=""></a>
+      </div>
+  </div>
+
+</header>
+
+
+  <!-- Include mobile drop-down options -->
+  <div id="boot-area">
+    <ul>
+        
+          <a href="/"><li>Home</li></a>
+        
+          <a href="/tags.html"><li>Tag</li></a>
+        
+          <a href="/timeline.html"><li>Timeline</li></a>
+        
+          <a href="/about.html"><li>aboutMe</li></a>
+        
+          <a href="/friendLink.html"><li>Links</li></a>
+        
+    </ul>
+</div>
+
+  <!-- Include post top style -->
+  <!-- 版本一 垃圾 -->
+<!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
+    <span class="wow fadeInUp" data-wow-delay="0.2s">Hello Github.io!</span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;true</span>
+</div> -->
+
+<!-- 版本二 可切换页面 -->
+
+<div class="post-top" style="background-color:rgb(130, 130, 255);">
+  <!-- 页面宽度大于800px -->
+  <div class="left-area">
+    
+      <a href="javascript:;" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(130, 130, 255)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(130, 130, 255);"><sapn class="main">没有上一页咯</sapn></span></div>
+    
+  </div>
+  <div class="post-titlearea">
+    <span class="wow fadeInUp" data-wow-delay="0.2s">Hello Github.io!</span>
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;true</span> -->
+  </div>
+  <div class="right-area">
+    
+      <a href="javascript:;" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(130, 130, 255)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(130, 130, 255);"><sapn class="main">没有下一页咯</sapn></span></div>
+    
+  </div>
+
+  <!-- 页面宽度小于800px -->
+  <div class="post-changearea">
+    
+      <a href="javascript:;" class="leftchange" style="border-right: 1px solid rgb(130, 130, 255);border-bottom: 2px solid rgb(130, 130, 255);"><span><br>没有上一篇咯</span></a>
+    
+    
+      <a href="javascript:;" class="rightchange" style="border-left: 1px solid rgb(130, 130, 255);border-bottom: 2px solid rgb(130, 130, 255);"><span><br>没有下一篇咯</span></a>
+    
+  </div>
+</div>
+
+
+
+  <div class="markdown-body fadeInUp animated">
+
+    
+      
+        <div class="postpage-subtitle" style="border-left: 8px solid rgb(130, 130, 255); border-right: 8px solid rgb(130, 130, 255);">
+          Hello World!
+        </div>
+      
+    
+
+    <!-- Article content -->
+    <p><br /></p>
+
+<p>Hello World!</p>
+
+<p>And, hello github.io, too!</p>
+
+<p>I’d like to extend my gratitude to <a href="https://github.com/xukimseven/HardCandy-Jekyll?tab=readme-ov-file">xukimseven</a> for creating such a fantastic GitHub Pages template!</p>
+
+    <!-- Include share module -->
+    
+  <div class="social-share-wrapper">
+    <div class="social-share"></div>
+  </div>
+
+
+<!-- share.js -->
+<script src="/assets/js/social-share.min.js"></script>
+<script>
+  socialShare('.social-share', {
+    sites: [
+      
+        'twitter'
+        ,
+        
+      
+        'facebook'
+        
+      
+    ],
+    wechatQrcodeTitle: "分享到微信朋友圈",
+    wechatQrcodeHelper: '期待在朋友圈见到这篇文章'
+  });
+</script>
+
+  </div>
+
+  <!-- Bottom anchor -->
+  <a id="htmldown" name="htmldown"></a>
+  <!-- Include comment module -->
+  
+
+
+
+
+<section class="post-footer-item comment">
+  <div id="container"></div>
+</section>
+
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '/2025/02/27/hello-world', // 可选。默认为 location.href
+  owner: 'your-github-username',
+  repo: 'your-blog-repo',
+  oauth: {
+    client_id: 'your-oauth-client-id',
+    client_secret: 'your-oauth-client-secret',
+  },
+})
+gitment.render('container')
+</script>
+
+
+  <!-- Include goto module -->
+  <div class="bounceInRight animated go">
+  <a title="顶部切换页面" class="gototop" href="#htmlup" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Top
+    </div>
+  </a>
+  <a title="底部有Gitment评论哦" class="gotobottom" href="#htmldown" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Foot
+    </div>
+  </a>
+</div>
+
+  <!-- Include page footer module -->
+  <footer id="bottom">
+  <br>
+  <span>달이 차면 기울어요 ©
+  
+  
+    2024
+    -
+  
+  2025
+  <br>
+  Powered by <a href="https://www.jekyll.com.cn/">Jekyll</a> | <a href="https://github.com/xukimseven/HardCandy-Jekyll">HardCandy-Jekyll</a></span>
+</footer>
+
+
+  <!-- Reference wow.js for animations -->
+  <script src="/assets/js/wow.js"></script>
+  <script>
+      var wow = new WOW({
+          boxClass: 'wow',
+          animateClass: 'animated',
+          // offset: 600,
+          mobile: true,
+          live: true
+      });
+      wow.init();
+  </script>
+
+  <!-- Return to top after page refresh -->
+  <script>
+      window.onbeforeunload = function(){
+          document.documentElement.scrollTop = 0;  // for IE
+          document.body.scrollTop = 0;            // for non-IE
+      }
+  </script>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
